@@ -5,7 +5,8 @@ from urllib.parse import urlparse, parse_qs
 
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.proxies import WebshareProxyConfig
-from youtube_transcript_api.errors import TranscriptsDisabled, NoTranscriptFound, VideoUnavailable
+
+from youtube_transcript_api import TranscriptsDisabled, NoTranscriptFound, VideoUnavailable 
 
 # IMPORTANT: Set these as Environment Variables in your Vercel project settings
 PROXY_USERNAME = "ovzsrnps-rotate"
