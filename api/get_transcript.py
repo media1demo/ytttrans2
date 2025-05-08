@@ -8,8 +8,8 @@ from youtube_transcript_api.proxies import WebshareProxyConfig
 from youtube_transcript_api.errors import TranscriptsDisabled, NoTranscriptFound, VideoUnavailable
 
 # IMPORTANT: Set these as Environment Variables in your Vercel project settings
-PROXY_USERNAME = os.environ.get("PROXY_USERNAME")
-PROXY_PASSWORD = os.environ.get("PROXY_PASSWORD")
+PROXY_USERNAME = "ovzsrnps-rotate"
+PROXY_PASSWORD = "ajl5st67thul"
 
 class handler(BaseHTTPRequestHandler):
 
