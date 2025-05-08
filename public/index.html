@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Fetcher</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input[type="text"] { width: calc(100% - 90px); padding: 10px; margin-right: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #transcriptOutput { margin-top: 20px; padding: 15px; background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; max-height: 400px; overflow-y: auto;}
+        .error { color: red; font-weight: bold; }
+        .loading { font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Transcript Fetcher</h1>
+        <div>
+            <input type="text" id="youtubeUrl" placeholder="Enter YouTube Video URL or ID (e.g., LAYRxnQapxY)">
+            <button id="fetchButton">Get Transcript</button>
+        </div>
+        <div id="status"></div>
+        <div id="transcriptOutput">
+            <!-- Transcript will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
